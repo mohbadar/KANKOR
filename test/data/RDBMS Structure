@@ -1,0 +1,21 @@
+
+CREATE SCHEMA `kankor` DEFAULT CHARACTER SET utf8;
+CREATE TABLE `kankor`.`kankor` (
+  `no` INT NOT NULL,
+  `id` VARCHAR(45) NULL,
+  `name` VARCHAR(60) NULL,
+  `father_name` VARCHAR(60) NULL,
+  `surname` VARCHAR(60) NULL,
+  `grand_father_name` VARCHAR(60) NULL,
+  `school` VARCHAR(150) NULL,
+  `graduation_year` VARCHAR(45) NULL,
+  `score` DOUBLE NULL,
+  `result` VARCHAR(150) NULL,
+  `province` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NULL,
+  PRIMARY KEY (`no`));
+
+
+
+  =CONCATENATE("insert into kankor (no, id, name, father_name, surname, grand_father_name, school, graduation_year, score, result, province, gender ) 
+  values(",A2, ",'", B2,"','", C2,"','", D2,"','", E2,"','",F2,"','", G2,"','",H2,"',",I2,",'",J2,"','",K2,"','",L2,"');")
